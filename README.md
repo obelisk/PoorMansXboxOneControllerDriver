@@ -34,6 +34,10 @@ gcc -objc -framework CoreFoundation -framework IOKit -framework ApplicationServi
 Now go into your game and you should now be able to play your game using the keyboard controllers from your Xbox One Controller.
 
 
+
+Here is a picture of how I've configured Castle Crashers to work with the controller: http://imgur.com/gcPZmuJ
+
+
 Future Goals
 ------------
 I would like to make the ability to create game profiles and then load them more easily instead of having one array that needs to be changed for each game that has a different mapping. Hopefully I can do that in the next couple weeks to months.
