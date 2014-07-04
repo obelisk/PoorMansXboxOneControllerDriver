@@ -12,6 +12,7 @@ Because it's not technically a driver. A true driver would make the operating sy
 
 There are a couple benefits to this however:
 	It will not crash your system like a KEXT with a bug in it will
+
 	You don't need to be root/administrator to use it
 
 
@@ -20,10 +21,15 @@ Ok...So how do I actually use it?
 I've tried to make it as simple as possible.
 
 You'll need to have gcc installed (which you can get for free from developers.apple.com, install the commandline tools).
+
 If you want to, you can modify the active_conf array to change the button mapping. A full list of the button codes can be found here: http://snipplr.com/view/42797/
+
 Then run this command to compile and run the "driver":
 
+
+
 gcc -objc -framework CoreFoundation -framework IOKit -framework ApplicationServices -framework Carbon -O2 -o driver first.c; ./driver
+
 
 Now go into your game and you should now be able to play your game using the keyboard controllers from your Xbox One Controller.
 
